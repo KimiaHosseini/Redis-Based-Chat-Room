@@ -5,9 +5,13 @@ This project is a Redis-based messaging system that allows users to create and m
 ## Features
 ### Group Management:
 Create Group: Allows the creation of a group with attributes such as name, description, and members.
+
 List Groups: Retrieve a list of all existing groups.
+
 Add Members: Add members to an existing group.
+
 Remove Members: Remove members from a group.
+
 Delete Group: Completely remove a group and its associated data.
 ### Message Management:
 Send Message: Send a message to a group with attributes like sender, timestamp, and content.
