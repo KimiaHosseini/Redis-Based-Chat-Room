@@ -15,7 +15,9 @@ Remove Members: Remove members from a group.
 Delete Group: Completely remove a group and its associated data.
 ### Message Management:
 Send Message: Send a message to a group with attributes like sender, timestamp, and content.
+
 Retrieve Messages: Retrieve the last 'n' hours of messages from a group.
+
 Publish/Subscribe: Subscribe to a group to receive real-time messages and publish messages to a group.
 
 ## Technical Details
@@ -24,6 +26,7 @@ The project uses Redis as the primary database, chosen for its in-memory data st
 
 ### Key-Value Design
 Keys: The keys are constructed using the format <group name>-<sender name>-<timestamp>, ensuring that messages are uniquely identified and easily retrievable.
+
 Values: The values associated with these keys store the actual message content and metadata.
 
 ### Pipelining
